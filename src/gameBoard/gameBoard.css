@@ -1,0 +1,90 @@
+body {
+  background-color: slategray;
+}
+
+#quadrants {
+  width: 30rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#upper-left {
+  background-color: #f9ebc8;
+  border-radius: 100rem 0 0 0;
+}
+
+#upper-right {
+  background-color: #b7e5dd;
+  border-radius: 0 100rem 0 0;
+}
+
+#lower-left {
+  background-color: #92ba92;
+  border-radius: 0 0 0 100rem;
+}
+
+#lower-right {
+  background-color: palevioletred;
+  border-radius: 0 0 100rem 0;
+}
+
+.quadrant {
+  width: 15rem;
+  height: 15rem;
+  border: 1rem solid black;
+  cursor: pointer;
+}
+
+#middle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: black;
+  transform: translate(57%, -132%);
+  border-radius: 100rem;
+  color: white;
+}
+
+#controls {
+  width: 10rem;
+  height: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 1rem;
+}
+
+.control {
+  height: 2rem;
+  margin: 0 0.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+#start {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/126/126712.png");
+  background-size: 100% 100%;
+}
+
+#stop {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1580/1580109.png");
+  background-size: 100% 100%;
+}
+
+#count {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/03/10/294205/a25d7a809ab2fd8f660d4448f4812a53.jpg");
+  background-size: 100% 100%;
+}
